@@ -25,19 +25,37 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1f6-18-zIz">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="158" height="224"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ptf-nT-7IM">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="Ptf-nT-7IM">
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card1" translatesAutoresizingMaskIntoConstraints="NO" id="KDC-Gr-MIp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="FLZ-c8-wSt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="224"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="FLZ-c8-wSt" secondAttribute="bottom" id="Cho-qC-Rak"/>
+                                            <constraint firstAttribute="trailing" secondItem="KDC-Gr-MIp" secondAttribute="trailing" id="D67-1d-QU3"/>
+                                            <constraint firstAttribute="trailing" secondItem="FLZ-c8-wSt" secondAttribute="trailing" id="KNz-Dv-Otw"/>
+                                            <constraint firstItem="KDC-Gr-MIp" firstAttribute="leading" secondItem="Ptf-nT-7IM" secondAttribute="leading" id="VfJ-Rj-5bg"/>
+                                            <constraint firstItem="FLZ-c8-wSt" firstAttribute="leading" secondItem="Ptf-nT-7IM" secondAttribute="leading" id="fHD-g6-8Z1"/>
+                                            <constraint firstItem="KDC-Gr-MIp" firstAttribute="top" secondItem="Ptf-nT-7IM" secondAttribute="top" id="vVM-Rx-6pp"/>
+                                            <constraint firstAttribute="bottom" secondItem="KDC-Gr-MIp" secondAttribute="bottom" id="xde-Vn-gTt"/>
+                                            <constraint firstItem="FLZ-c8-wSt" firstAttribute="top" secondItem="Ptf-nT-7IM" secondAttribute="top" id="xmg-o7-xnt"/>
+                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -60,4 +78,8 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="back" width="158" height="224"/>
+        <image name="card1" width="158" height="224"/>
+    </resources>
 </document>
