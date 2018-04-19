@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var model = CardModel()
+    var cardArray = [Card]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // call the fetCards method of the card model
+        cardArray = model.getCards()
     }
 
     override func didReceiveMemoryWarning() {

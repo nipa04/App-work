@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8412C2D820863CBA00D30CCF /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412C2D720863CBA00D30CCF /* Concentration.swift */; };
+		8412C2DC20863E9B00D30CCF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412C2DB20863E9B00D30CCF /* Card.swift */; };
 		848EC1E0207BF18D0014519F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EC1DF207BF18D0014519F /* AppDelegate.swift */; };
 		848EC1E2207BF18E0014519F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EC1E1207BF18E0014519F /* ViewController.swift */; };
 		848EC1E5207BF18E0014519F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848EC1E3207BF18E0014519F /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8412C2D720863CBA00D30CCF /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		8412C2DB20863E9B00D30CCF /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		848EC1DC207BF18D0014519F /* standfordUniApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = standfordUniApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848EC1DF207BF18D0014519F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848EC1E1207BF18E0014519F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				848EC1E1207BF18E0014519F /* ViewController.swift */,
 				848EC1E3207BF18E0014519F /* Main.storyboard */,
+				8412C2D720863CBA00D30CCF /* Concentration.swift */,
+				8412C2DB20863E9B00D30CCF /* Card.swift */,
 				848EC1EB207BF18E0014519F /* Info.plist */,
 				848EC1F1207BF9D20014519F /* Supporting Files */,
 			);
@@ -146,6 +152,8 @@
 			files = (
 				848EC1E2207BF18E0014519F /* ViewController.swift in Sources */,
 				848EC1E0207BF18D0014519F /* AppDelegate.swift in Sources */,
+				8412C2D820863CBA00D30CCF /* Concentration.swift in Sources */,
+				8412C2DC20863E9B00D30CCF /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

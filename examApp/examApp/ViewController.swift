@@ -13,31 +13,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var colorLabel: UILabel!
     
+    @IBOutlet var colorButtonsCollection: [UIButton]!
     
-    @IBAction func redButton(_ sender: UIButton)
+    var colorChoices = [ #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1) ,#colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1), #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1), #colorLiteral(red: 0.9994240403, green: 0.9855536819, blue: 0, alpha: 1) ]
+    
+    var colorLabelChoices = ["Red", "Blue", "Green" ,"Yellow"]
+    
+    @IBAction func colorButtons(_ sender: UIButton)
     {
-        changeBackgroundColor(withColor: #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1) , on: sender)
-        colorLabel.text = "RED"
+        if let colorNumber = colorButtonsCollection.index(of: sender)
+        {
+            changeBackgroundColor(withColor: colorChoices[colorNumber] , on: sender)
+            colorLabel.text = colorLabelChoices [colorNumber]
+            
+        }
     }
-    
-    @IBAction func blueButton(_ sender: UIButton)
-    {
-        changeBackgroundColor(withColor: #colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1), on: sender)
-            colorLabel.text = "Blue"
-    }
-    
-    @IBAction func greenButton(_ sender: UIButton) {
-         changeBackgroundColor(withColor: #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1), on: sender)
-            colorLabel.text = "Green"
-        
-    }
-    
-    @IBAction func yellowButton(_ sender: UIButton) {
-         changeBackgroundColor(withColor: #colorLiteral(red: 0.9994240403, green: 0.9855536819, blue: 0, alpha: 1), on: sender)
-        colorLabel.text = "Yellow"
-        
-    }
-    
+
     func changeBackgroundColor(withColor color : UIColor ,on button: UIButton ) {
         if button.currentTitleColor == color
         {
@@ -48,6 +39,5 @@ class ViewController: UIViewController {
             button.setTitleColor(color, for: UIControlState.normal)
             view.backgroundColor = color
         }
-    
 }
 }
