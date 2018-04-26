@@ -62,7 +62,8 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             timer?.invalidate()
             timerLabel.textColor = UIColor.red
             
-            // Check
+            // Check if there are any cards unmatched
+            checkGameEnded()
         }
         
     }
@@ -89,6 +90,11 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        //Check there's any time left
+        if milliseconds <= 0 {
+            return
+        }
         
         let cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell
         
@@ -146,6 +152,9 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             //Remove the cards from the grid
             cardOneCell?.remove()
             cardTwoCell?.remove()
+            
+            //Check if there are any cards left unmatched
+            checkGameEnded()
         }
         else {
             //Its not a match
@@ -165,6 +174,53 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         //Reset the property that tracks the first card flipped
         firstFlippedCardIndex = nil
     }
+    func checkGameEnded() {
+        //Determine if there are any cards unmatched
+        
+        var isWon = true
+        for card in cardArray {
+            
+            if card.ismatched == false {
+                isWon = false
+                break
+            }
+        }
+        
+        //Messaging variables
+        var title = ""
+        var message = ""
+        
+        // If not, then user has won,stop the timer
+        if isWon == true {
+            
+            if milliseconds > 0 {
+                timer?.invalidate()
+            }
+            
+            title = "Congratulations!"
+            message = "You've won"
+        }
+        else {
+            //if there are unmatched cards, check if there's any time left
+            if milliseconds > 0 {
+                return
+            }
+            title = "Game Over"
+            message = "You've lost"
+        }
+        
+        //Show won/lost messaging
+        showAlert(title,message)
+   
+    }
+    func showAlert(_ title:String,_ message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(alertAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
 }
 
 //End of ViewController class
