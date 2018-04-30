@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     {
         if let colorNumber = colorButtonsCollection.index(of: sender)
         {
-            changeBackgroundColor(withColor: colorChoices[colorNumber] , on: sender)
+            changeBackgroundColor(withColor: UIColor.copy(<#T##UIColor#>) , on: sender)
             colorLabel.text = colorLabelChoices [colorNumber]
             
         }
