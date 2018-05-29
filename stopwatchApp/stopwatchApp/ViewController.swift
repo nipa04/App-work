@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
 
     @IBAction func startButton(_ sender: UIButton) {
+  
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(action), userInfo: nil, repeats: true)
         
     }
