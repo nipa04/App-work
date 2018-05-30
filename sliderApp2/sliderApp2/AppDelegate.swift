@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  ColourMapper
+//  sliderApp2
 //
-//  Created by Admin on 2018-04-09.
-//  Copyright © 2018 Admin. All rights reserved.
+//  Created by iOS developer on 5/30/18.
+//  Copyright © 2018 iOS developer. All rights reserved.
 //
 
 import UIKit
