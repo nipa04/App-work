@@ -18,8 +18,12 @@ class ViewController: UIViewController {
     
     @IBAction func tapButton(_ sender: UIButton) {
         if countingIsOn == false {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.3 , target: self, selector: #selector(counter), userInfo: nil, repeats: true)
          countingIsOn = true
+        }
+        else if countingIsOn == true {
+            timer.invalidate()
+            countingIsOn = false
         }
     }
     
