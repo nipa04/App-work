@@ -18,29 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="2OD-fF-OXr">
-                                <rect key="frame" x="104" y="481" width="158" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalHuggingPriority="252" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="2OD-fF-OXr">
+                                <rect key="frame" x="48" y="405" width="279" height="31"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="sliderButton:" destination="BYZ-38-t0r" eventType="valueChanged" id="jJX-zM-lPZ"/>
                                 </connections>
                             </slider>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zbu-aH-jeo">
-                                <rect key="frame" x="98" y="146" width="179" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="text:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="icW-X7-gDL"/>
-                                </connections>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbp-ew-zT2">
+                                <rect key="frame" x="50" y="67" width="275" height="117"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="98"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2OD-fF-OXr" secondAttribute="trailing" constant="50" id="0qU-gz-ACG"/>
+                            <constraint firstItem="2OD-fF-OXr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="7gg-sp-rty"/>
+                            <constraint firstItem="zbp-ew-zT2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Bc6-WP-Uhi"/>
+                            <constraint firstItem="zbp-ew-zT2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="DqF-Hf-MRh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zbp-ew-zT2" secondAttribute="trailing" constant="50" id="GCd-Zr-mCq"/>
+                            <constraint firstItem="2OD-fF-OXr" firstAttribute="top" secondItem="zbp-ew-zT2" secondAttribute="bottom" constant="221" id="VBB-HK-Tzn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="textLabel" destination="zbu-aH-jeo" id="lNF-Uj-ukf"/>
+                        <outlet property="textLabel" destination="zbp-ew-zT2" id="b7c-iI-Zkh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

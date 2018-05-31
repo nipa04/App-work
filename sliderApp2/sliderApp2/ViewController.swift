@@ -10,17 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func text(_ sender: UITextField) {
-        
-    }
+   
+    @IBOutlet weak var textLabel: UILabel!
     
-    @IBOutlet weak var textLabel: UITextField!
     
     @IBAction func sliderButton(_ sender: UISlider) {
-    
-        textLabel.text = String(Int(sender.value))
+
+        let colorValue = UIColor(red: 0, green: 0, blue: 0, alpha: CGFloat(Int(sender.value)))
+
+        textLabel.textColor = colorValue
         
+//        let colorValue = UIColor(hue: 0.0 , saturation: CGFloat(Int(1)) , brightness: CGFloat(Int(sender.value))            , alpha: CGFloat(Int(sender.value)))
+//         textLabel.textColor = colorValue
+
     }
+        
     
 }
 
