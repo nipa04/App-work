@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     @IBAction func sliderButton(_ sender: UISlider) {
 
-        let colorValue = UIColor(red: 0, green: 0, blue: 0, alpha: CGFloat(Int(sender.value)))
+        let colorValue = UIColor(red: 0, green: 0, blue: 0, alpha: CGFloat(sender.value))
 
         textLabel.textColor = colorValue
         
