@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tableViewApp3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O1J-Pz-sUj">
+                                <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="125" id="T3j-ud-VXf" customClass="TableViewCell" customModule="tableViewApp3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T3j-ud-VXf" id="Vgp-Tg-dSS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5n-MF-0xZ">
+                                                    <rect key="frame" x="9" y="0.0" width="357" height="124"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bird" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSe-CO-ilJ">
+                                                            <rect key="frame" x="255" y="34" width="102" height="48"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="AUn-PU-9AV"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bird" translatesAutoresizingMaskIntoConstraints="NO" id="9Yg-xY-oOv">
+                                                            <rect key="frame" x="31" y="8" width="185" height="116"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="cSe-CO-ilJ" secondAttribute="bottom" constant="42" id="2b7-ga-fcU"/>
+                                                        <constraint firstAttribute="bottom" secondItem="9Yg-xY-oOv" secondAttribute="bottom" id="3gx-Oo-Mh0"/>
+                                                        <constraint firstItem="cSe-CO-ilJ" firstAttribute="top" secondItem="v5n-MF-0xZ" secondAttribute="top" constant="34" id="4Cg-8s-R6U"/>
+                                                        <constraint firstAttribute="trailing" secondItem="cSe-CO-ilJ" secondAttribute="trailing" id="5Kk-DB-iGL"/>
+                                                        <constraint firstItem="cSe-CO-ilJ" firstAttribute="leading" secondItem="9Yg-xY-oOv" secondAttribute="trailing" constant="39" id="JbF-ba-DKg"/>
+                                                        <constraint firstItem="9Yg-xY-oOv" firstAttribute="top" secondItem="v5n-MF-0xZ" secondAttribute="top" constant="8" id="Ssd-7e-7Z5"/>
+                                                        <constraint firstItem="cSe-CO-ilJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Yg-xY-oOv" secondAttribute="trailing" constant="8" symbolic="YES" id="f8v-A1-z7Q"/>
+                                                        <constraint firstItem="9Yg-xY-oOv" firstAttribute="leading" secondItem="v5n-MF-0xZ" secondAttribute="leading" constant="31" id="vIZ-Hz-vaX"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="v5n-MF-0xZ" firstAttribute="centerY" secondItem="Vgp-Tg-dSS" secondAttribute="centerY" id="OcR-6c-RYo"/>
+                                                <constraint firstItem="v5n-MF-0xZ" firstAttribute="centerX" secondItem="Vgp-Tg-dSS" secondAttribute="centerX" id="SJ3-e0-Hwr"/>
+                                                <constraint firstItem="v5n-MF-0xZ" firstAttribute="top" secondItem="Vgp-Tg-dSS" secondAttribute="top" id="bQy-zG-rxT"/>
+                                                <constraint firstItem="v5n-MF-0xZ" firstAttribute="leading" secondItem="Vgp-Tg-dSS" secondAttribute="leadingMargin" constant="-6" id="gOK-Ih-6hb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="9Yg-xY-oOv" id="r8S-cP-XUv"/>
+                                            <outlet property="label" destination="cSe-CO-ilJ" id="1JI-pq-Mlq"/>
+                                            <outlet property="myImageView" destination="9Yg-xY-oOv" id="gXI-2O-Fb6"/>
+                                            <outlet property="view" destination="Vgp-Tg-dSS" id="8wO-Eo-ouf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="c7B-uc-2ty"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9tp-yO-iqX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O1J-Pz-sUj" secondAttribute="trailing" id="0s4-nT-Clx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O1J-Pz-sUj" secondAttribute="bottom" id="6Ol-dB-kZc"/>
+                            <constraint firstItem="O1J-Pz-sUj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="RD4-dN-Y7t"/>
+                            <constraint firstItem="O1J-Pz-sUj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yqA-6J-sia"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bird" width="284" height="177"/>
+    </resources>
+</document>
