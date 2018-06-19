@@ -18,6 +18,10 @@ class CategoriesVC: UIViewController , UITableViewDataSource, UITableViewDelegat
         categoryTable.delegate = self
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 225
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return DataService.instance.getCategories().count
     }
@@ -31,6 +35,21 @@ class CategoriesVC: UIViewController , UITableViewDataSource, UITableViewDelegat
         else {
             return CategoryCell()
         }
+        
+        func tableView(_ tableView: UITableView , didSelectRowAt indexPath : IndexPath) {
+            let category = DataService.instance.getCategories()[indexPath.row]
+            performSegue(withIdentifier: "ProductsVC", sender: category)
+        }
+        
+        func prepare(for segue: UIStoryboardSegue, sender: Any?){
+            if let productsVC = segue.destination as? ProductsVC {
+                assert(sender as? Category != nil)
+                productsVC.initProducts(category: sender as! Category)
+            }
+        }
+        
+        
+        
     }
 }
 

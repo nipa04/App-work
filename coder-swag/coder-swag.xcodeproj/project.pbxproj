@@ -17,6 +17,7 @@
 		E40B521E20D2BD2400EE8EB7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40B521D20D2BD2400EE8EB7 /* DataService.swift */; };
 		E40B522420D2E76100EE8EB7 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40B522320D2E76100EE8EB7 /* ProductCell.swift */; };
 		E40B522620D2E87400EE8EB7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40B522520D2E87400EE8EB7 /* Product.swift */; };
+		E40B522A20D967C400EE8EB7 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40B522920D967C400EE8EB7 /* ProductsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E40B521D20D2BD2400EE8EB7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		E40B522320D2E76100EE8EB7 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		E40B522520D2E87400EE8EB7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		E40B522920D967C400EE8EB7 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +82,8 @@
 		E40B521320D2B92F00EE8EB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E40B521A20D2BB8F00EE8EB7 /* Category.swift */,
 				E40B522520D2E87400EE8EB7 /* Product.swift */,
+				E40B521A20D2BB8F00EE8EB7 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				E40B520320D2B2D700EE8EB7 /* CategoriesVC.swift */,
+				E40B522920D967C400EE8EB7 /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E40B522A20D967C400EE8EB7 /* ProductsVC.swift in Sources */,
 				E40B520420D2B2D700EE8EB7 /* CategoriesVC.swift in Sources */,
 				E40B520220D2B2D700EE8EB7 /* AppDelegate.swift in Sources */,
 				E40B521720D2B9B700EE8EB7 /* CategoryCell.swift in Sources */,
