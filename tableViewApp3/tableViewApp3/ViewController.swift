@@ -16,7 +16,8 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         return elements.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 125
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -25,9 +26,9 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         cell.myImageView.image = UIImage( named: elements[indexPath.row])
         cell.textLabel?.text =  elements[indexPath.row]
         
-        cell.myImageView.layer.cornerRadius = cell.myImageView.frame.height / 2
-        cell.view.layer.cornerRadius = cell.view.frame.height / 2
-        
+//        cell.myImageView.layer.cornerRadius = cell.myImageView.frame.height / 2
+//        cell.view.layer.cornerRadius = cell.view.frame.height / 2
+//        
         
         return cell
         

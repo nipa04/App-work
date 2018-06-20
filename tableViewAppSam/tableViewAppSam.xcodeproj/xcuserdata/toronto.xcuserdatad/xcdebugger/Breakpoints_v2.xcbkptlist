@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tableViewAppSam/ViewController.swift"
+            timestampString = "551162503.453917"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "variable initialization expression of tableViewAppSam.ViewController.list : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "tableViewAppSam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toronto/Documents/App-work/tableViewAppSam/tableViewAppSam/ViewController.swift"
+                  timestampString = "551162503.464667"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tableViewAppSam.ViewController.list.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "tableViewAppSam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toronto/Documents/App-work/tableViewAppSam/tableViewAppSam/ViewController.swift"
+                  timestampString = "551162503.467996"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tableViewAppSam.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; tableViewAppSam.ViewController"
+                  moduleName = "tableViewAppSam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toronto/Documents/App-work/tableViewAppSam/tableViewAppSam/ViewController.swift"
+                  timestampString = "551162503.47137"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tableViewAppSam.ViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;tableViewAppSam.ViewController&gt;"
+                  moduleName = "tableViewAppSam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toronto/Documents/App-work/tableViewAppSam/tableViewAppSam/ViewController.swift"
+                  timestampString = "551162503.474578"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

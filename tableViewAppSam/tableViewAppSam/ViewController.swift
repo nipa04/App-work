@@ -12,6 +12,10 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     
     let list = ["Iron Man","Spider Man", "Batman"]
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(list.count)
     }
@@ -21,9 +25,5 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         cell.textLabel?.text = list[indexPath.row]
         return(cell)
     }
-    
- 
-   
-    
 }
 

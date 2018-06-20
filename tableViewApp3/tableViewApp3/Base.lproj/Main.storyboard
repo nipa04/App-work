@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,76 +15,71 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tableViewApp3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O1J-Pz-sUj">
-                                <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="agE-MC-kme">
+                                <rect key="frame" x="0.0" y="31" width="667" height="344"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="125" id="T3j-ud-VXf" customClass="TableViewCell" customModule="tableViewApp3" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="125"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="customCell" rowHeight="151" id="ia5-SY-WJf" customClass="TableViewCell" customModule="tableViewApp3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="667" height="151"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T3j-ud-VXf" id="Vgp-Tg-dSS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ia5-SY-WJf" id="NKt-7z-2BB">
+                                            <rect key="frame" x="0.0" y="0.0" width="667" height="150.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5n-MF-0xZ">
-                                                    <rect key="frame" x="9" y="0.0" width="357" height="124"/>
+                                                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ipt-J1-eVd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="667" height="151"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bird" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSe-CO-ilJ">
-                                                            <rect key="frame" x="255" y="34" width="102" height="48"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="AUn-PU-9AV"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Duck" translatesAutoresizingMaskIntoConstraints="NO" id="VAO-6P-LCp">
+                                                            <rect key="frame" x="0.0" y="0.0" width="588.5" height="151"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdE-Zr-iXX">
+                                                            <rect key="frame" x="619.5" y="44" width="39.5" height="62"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bird" translatesAutoresizingMaskIntoConstraints="NO" id="9Yg-xY-oOv">
-                                                            <rect key="frame" x="31" y="8" width="185" height="116"/>
-                                                        </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="cSe-CO-ilJ" secondAttribute="bottom" constant="42" id="2b7-ga-fcU"/>
-                                                        <constraint firstAttribute="bottom" secondItem="9Yg-xY-oOv" secondAttribute="bottom" id="3gx-Oo-Mh0"/>
-                                                        <constraint firstItem="cSe-CO-ilJ" firstAttribute="top" secondItem="v5n-MF-0xZ" secondAttribute="top" constant="34" id="4Cg-8s-R6U"/>
-                                                        <constraint firstAttribute="trailing" secondItem="cSe-CO-ilJ" secondAttribute="trailing" id="5Kk-DB-iGL"/>
-                                                        <constraint firstItem="cSe-CO-ilJ" firstAttribute="leading" secondItem="9Yg-xY-oOv" secondAttribute="trailing" constant="39" id="JbF-ba-DKg"/>
-                                                        <constraint firstItem="9Yg-xY-oOv" firstAttribute="top" secondItem="v5n-MF-0xZ" secondAttribute="top" constant="8" id="Ssd-7e-7Z5"/>
-                                                        <constraint firstItem="cSe-CO-ilJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Yg-xY-oOv" secondAttribute="trailing" constant="8" symbolic="YES" id="f8v-A1-z7Q"/>
-                                                        <constraint firstItem="9Yg-xY-oOv" firstAttribute="leading" secondItem="v5n-MF-0xZ" secondAttribute="leading" constant="31" id="vIZ-Hz-vaX"/>
+                                                        <constraint firstItem="VAO-6P-LCp" firstAttribute="leading" secondItem="ipt-J1-eVd" secondAttribute="leading" id="0Bq-ah-yhk"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KdE-Zr-iXX" secondAttribute="trailing" constant="8" id="PIQ-7L-aum"/>
+                                                        <constraint firstAttribute="bottom" secondItem="VAO-6P-LCp" secondAttribute="bottom" id="WJV-gr-BlS"/>
+                                                        <constraint firstAttribute="bottom" secondItem="KdE-Zr-iXX" secondAttribute="bottom" constant="45" id="f8W-8H-Lh7"/>
+                                                        <constraint firstItem="KdE-Zr-iXX" firstAttribute="top" secondItem="ipt-J1-eVd" secondAttribute="top" constant="44" id="nbT-cA-LNO"/>
+                                                        <constraint firstItem="VAO-6P-LCp" firstAttribute="top" secondItem="ipt-J1-eVd" secondAttribute="top" id="nos-w9-aP9"/>
+                                                        <constraint firstItem="KdE-Zr-iXX" firstAttribute="leading" secondItem="VAO-6P-LCp" secondAttribute="trailing" constant="31" id="xSz-FB-Jdz"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="v5n-MF-0xZ" firstAttribute="centerY" secondItem="Vgp-Tg-dSS" secondAttribute="centerY" id="OcR-6c-RYo"/>
-                                                <constraint firstItem="v5n-MF-0xZ" firstAttribute="centerX" secondItem="Vgp-Tg-dSS" secondAttribute="centerX" id="SJ3-e0-Hwr"/>
-                                                <constraint firstItem="v5n-MF-0xZ" firstAttribute="top" secondItem="Vgp-Tg-dSS" secondAttribute="top" id="bQy-zG-rxT"/>
-                                                <constraint firstItem="v5n-MF-0xZ" firstAttribute="leading" secondItem="Vgp-Tg-dSS" secondAttribute="leadingMargin" constant="-6" id="gOK-Ih-6hb"/>
+                                                <constraint firstItem="ipt-J1-eVd" firstAttribute="leading" secondItem="NKt-7z-2BB" secondAttribute="leading" id="1e2-Aj-5fD"/>
+                                                <constraint firstItem="ipt-J1-eVd" firstAttribute="top" secondItem="NKt-7z-2BB" secondAttribute="top" id="E8e-xD-lUF"/>
+                                                <constraint firstAttribute="trailing" secondItem="ipt-J1-eVd" secondAttribute="trailing" id="QaT-T6-qvT"/>
+                                                <constraint firstAttribute="bottom" secondItem="ipt-J1-eVd" secondAttribute="bottom" id="oyr-mZ-OqG"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imageView" destination="9Yg-xY-oOv" id="r8S-cP-XUv"/>
-                                            <outlet property="label" destination="cSe-CO-ilJ" id="1JI-pq-Mlq"/>
-                                            <outlet property="myImageView" destination="9Yg-xY-oOv" id="gXI-2O-Fb6"/>
-                                            <outlet property="view" destination="Vgp-Tg-dSS" id="8wO-Eo-ouf"/>
+                                            <outlet property="label" destination="KdE-Zr-iXX" id="8TW-q2-LR0"/>
+                                            <outlet property="myImageView" destination="VAO-6P-LCp" id="d3v-l1-90r"/>
+                                            <outlet property="view" destination="ipt-J1-eVd" id="1PR-fd-VA7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="c7B-uc-2ty"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9tp-yO-iqX"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="yB6-aY-GAZ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="IjF-rV-V6b"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O1J-Pz-sUj" secondAttribute="trailing" id="0s4-nT-Clx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O1J-Pz-sUj" secondAttribute="bottom" id="6Ol-dB-kZc"/>
-                            <constraint firstItem="O1J-Pz-sUj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="RD4-dN-Y7t"/>
-                            <constraint firstItem="O1J-Pz-sUj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yqA-6J-sia"/>
+                            <constraint firstItem="agE-MC-kme" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="C6C-Ue-Pvh"/>
+                            <constraint firstItem="agE-MC-kme" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P1z-SN-5K0"/>
+                            <constraint firstItem="agE-MC-kme" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="mht-sC-U7W"/>
+                            <constraint firstItem="agE-MC-kme" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vFc-BU-3Dk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -96,6 +90,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Bird" width="284" height="177"/>
+        <image name="Duck" width="1600" height="900"/>
     </resources>
 </document>
