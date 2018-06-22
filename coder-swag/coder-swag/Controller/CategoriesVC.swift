@@ -18,14 +18,17 @@ class CategoriesVC: UIViewController , UITableViewDataSource, UITableViewDelegat
         categoryTable.delegate = self
     }
     
+    // MARK:
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 225
+        return 200
     }
     
+    // MARK:
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return DataService.instance.getCategories().count
     }
     
+    // MARK:
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as? CategoryCell {
             let category = DataService.instance.getCategories()[indexPath.row]
@@ -35,21 +38,24 @@ class CategoriesVC: UIViewController , UITableViewDataSource, UITableViewDelegat
         else {
             return CategoryCell()
         }
-        
-        func tableView(_ tableView: UITableView , didSelectRowAt indexPath : IndexPath) {
-            let category = DataService.instance.getCategories()[indexPath.row]
-            performSegue(withIdentifier: "ProductsVC", sender: category)
-        }
-        
-        func prepare(for segue: UIStoryboardSegue, sender: Any?){
-            if let productsVC = segue.destination as? ProductsVC {
-                assert(sender as? Category != nil)
-                productsVC.initProducts(category: sender as! Category)
-            }
-        }
-        
-        
-        
     }
+    
+    // MARK:
+    func tableView(_ tableView: UITableView , didSelectRowAt indexPath : IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+    }
+    
+    // MARK:
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if let productsVC = segue.destination as? ProductsVC {
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
+            assert(sender as? Category != nil)
+            productsVC.initProducts(category: sender as! Category)
+        }
+    }
+
 }
 

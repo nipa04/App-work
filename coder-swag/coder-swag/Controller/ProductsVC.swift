@@ -17,10 +17,11 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         super.viewDidLoad()
         productsCollection.dataSource = self
         productsCollection.delegate = self
-
     }
+    
     func initProducts(category : Category) {
         products = DataService.instance.getProducts(forCategoryTitle: category.title)
+        navigationItem.title = category.title
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -33,8 +34,6 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
             cell.updateViews(product: product)
             return cell
         }
-        
         return ProductCell()
     }
-
 }

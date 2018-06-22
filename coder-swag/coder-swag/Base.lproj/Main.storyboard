@@ -101,7 +101,7 @@
         <!--ProductsVC-->
         <scene sceneID="zgX-C6-0gu">
             <objects>
-                <viewController id="8As-yE-PqM" customClass="ProductsVC" sceneMemberID="viewController">
+                <viewController id="8As-yE-PqM" customClass="ProductsVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Fe-Qh-mSd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,7 +199,7 @@
                         <viewLayoutGuide key="safeArea" id="5M9-RR-VPr"/>
                     </view>
                     <connections>
-                        <outlet property="productsCollection" destination="dvj-GB-ZVM" id="TaL-1S-6MR"/>
+                        <outlet property="productsCollection" destination="dvj-GB-ZVM" id="p6R-La-Yhq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBM-bY-wAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
