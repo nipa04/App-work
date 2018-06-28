@@ -49,7 +49,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9IL-j9-qgZ">
                             <color key="tintColor" red="0.36182053722504237" green="0.36540291878172593" blue="0.36540291878172593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="i8h-S2-u90" kind="show" id="o7r-at-r4P"/>
+                                <segue destination="i8h-S2-u90" kind="show" identifier="presentColorPickerVC" id="o7r-at-r4P"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

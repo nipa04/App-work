@@ -9,15 +9,17 @@
 import UIKit
 
 class ColorPickerVC: UIViewController {
-
+    
+    var delegate : ColorTranferDelegate? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func colorBtnWasPressed(sender: UIButton) {
-        print (sender.titleLabel?.text!)
+        if delegate != nil {
+        delegate?.userDidChoose(color: sender.backgroundColor!, withName:(sender.titleLabel?.text!)!)
+        self.navigationController?.popViewController(animated: true)
+        }
     }
-
 }
