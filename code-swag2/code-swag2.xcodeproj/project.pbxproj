@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4674F9D20F517C5006C34AB /* code_swag3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4674F9C20F517C5006C34AB /* code_swag3UITests.swift */; };
 		E4A02E7F20EE830100556C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A02E7E20EE830100556C75 /* AppDelegate.swift */; };
 		E4A02E8120EE830100556C75 /*  colorPresenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A02E8020EE830100556C75 /*  colorPresenterVC.swift */; };
 		E4A02E8420EE830100556C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A02E8220EE830100556C75 /* Main.storyboard */; };
@@ -18,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E4674F9F20F517C5006C34AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4A02E7320EE830100556C75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4A02E7A20EE830100556C75;
+			remoteInfo = "code-swag2";
+		};
 		E4A02E9020EE830200556C75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E4A02E7320EE830100556C75 /* Project object */;
@@ -28,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E4674F9A20F517C5006C34AB /* code-swag3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "code-swag3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4674F9C20F517C5006C34AB /* code_swag3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = code_swag3UITests.swift; sourceTree = "<group>"; };
+		E4674F9E20F517C5006C34AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4A02E7B20EE830100556C75 /* code-swag2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "code-swag2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A02E7E20EE830100556C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4A02E8020EE830100556C75 /*  colorPresenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " colorPresenterVC.swift"; sourceTree = "<group>"; };
@@ -43,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E4674F9720F517C5006C34AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4A02E7820EE830100556C75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,11 +78,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4674F9B20F517C5006C34AB /* code-swag3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4674F9C20F517C5006C34AB /* code_swag3UITests.swift */,
+				E4674F9E20F517C5006C34AB /* Info.plist */,
+			);
+			path = "code-swag3UITests";
+			sourceTree = "<group>";
+		};
 		E4A02E7220EE830100556C75 = {
 			isa = PBXGroup;
 			children = (
 				E4A02E7D20EE830100556C75 /* code-swag2 */,
 				E4A02E9220EE830200556C75 /* code-swag2UITests */,
+				E4674F9B20F517C5006C34AB /* code-swag3UITests */,
 				E4A02E7C20EE830100556C75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +102,7 @@
 			children = (
 				E4A02E7B20EE830100556C75 /* code-swag2.app */,
 				E4A02E8F20EE830200556C75 /* code-swag2UITests.xctest */,
+				E4674F9A20F517C5006C34AB /* code-swag3UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +134,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E4674F9920F517C5006C34AB /* code-swag3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4674FA320F517C5006C34AB /* Build configuration list for PBXNativeTarget "code-swag3UITests" */;
+			buildPhases = (
+				E4674F9620F517C5006C34AB /* Sources */,
+				E4674F9720F517C5006C34AB /* Frameworks */,
+				E4674F9820F517C5006C34AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4674FA020F517C5006C34AB /* PBXTargetDependency */,
+			);
+			name = "code-swag3UITests";
+			productName = "code-swag3UITests";
+			productReference = E4674F9A20F517C5006C34AB /* code-swag3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E4A02E7A20EE830100556C75 /* code-swag2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4A02E9820EE830200556C75 /* Build configuration list for PBXNativeTarget "code-swag2" */;
@@ -146,10 +193,15 @@
 		E4A02E7320EE830100556C75 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "iOS developer";
 				TargetAttributes = {
+					E4674F9920F517C5006C34AB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E4A02E7A20EE830100556C75;
+					};
 					E4A02E7A20EE830100556C75 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -176,11 +228,19 @@
 			targets = (
 				E4A02E7A20EE830100556C75 /* code-swag2 */,
 				E4A02E8E20EE830200556C75 /* code-swag2UITests */,
+				E4674F9920F517C5006C34AB /* code-swag3UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E4674F9820F517C5006C34AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4A02E7920EE830100556C75 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,6 +261,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E4674F9620F517C5006C34AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4674F9D20F517C5006C34AB /* code_swag3UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4A02E7720EE830100556C75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +291,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E4674FA020F517C5006C34AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4A02E7A20EE830100556C75 /* code-swag2 */;
+			targetProxy = E4674F9F20F517C5006C34AB /* PBXContainerItemProxy */;
+		};
 		E4A02E9120EE830200556C75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E4A02E7A20EE830100556C75 /* code-swag2 */;
@@ -250,6 +323,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E4674FA120F517C5006C34AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94WC52RNY;
+				INFOPLIST_FILE = "code-swag3UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Farjana-Nipa.code-swag3UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "code-swag2";
+			};
+			name = Debug;
+		};
+		E4674FA220F517C5006C34AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94WC52RNY;
+				INFOPLIST_FILE = "code-swag3UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Farjana-Nipa.code-swag3UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "code-swag2";
+			};
+			name = Release;
+		};
 		E4A02E9620EE830200556C75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -422,6 +527,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E4674FA320F517C5006C34AB /* Build configuration list for PBXNativeTarget "code-swag3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4674FA120F517C5006C34AB /* Debug */,
+				E4674FA220F517C5006C34AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E4A02E7620EE830100556C75 /* Build configuration list for PBXProject "code-swag2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
