@@ -11,13 +11,22 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var pinkButton: UIButton!
-    @IBOutlet weak var ornageButton: UIButton!
+    @IBOutlet weak var orangeButton: UIButton!
+    
+    @IBOutlet weak var yellowButton: UIButton!
+    
+    @IBOutlet weak var greenButton: UIButton!
+    
+    @IBOutlet weak var blueButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.pinkButton.accessibilityIdentifier     = "ViewController_pinkButton"
-        self.ornageButton.accessibilityIdentifier   = "ViewController_ornageButton"
+        
+        self.pinkButton.accessibilityIdentifier     = "ViewController_pinkButton";
+        self.orangeButton.accessibilityIdentifier   = "ViewController_ornageButton";
+        self.yellowButton.accessibilityIdentifier   = "ViewController_yellowButton";
+        self.greenButton.accessibilityIdentifier   = "ViewController_greenButton" ; self.blueButton.accessibilityIdentifier   = "ViewController_blueButton"
     }
 }
 

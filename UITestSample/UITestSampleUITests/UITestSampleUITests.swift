@@ -36,6 +36,24 @@ class UITestSampleUITests: XCTestCase {
         let orangeButton = XCUIApplication().buttons["ViewController_ornageButton"]
         orangeButton.tap()
     }
+    func testTapYellowButton() {
+        let yellowButton = XCUIApplication().buttons["ViewController_yellowButton"]
+        yellowButton.tap()
+    }
+    
+    func testTapGreenButton() {
+        let greenButton = XCUIApplication().buttons["ViewController_greenButton"]
+        greenButton.tap()
+    }
+   
+    func testTapBlueButton() {
+        let blueButton = XCUIApplication().buttons["ViewController_blueButton"]
+        blueButton.tap()
+    }
+    func testButtonIsPink() {
+        XCTAssertTrue(viewController.buttonIsPink)
+    }
+    
     
     func testExample() {
         // Use recording to get started writing UI tests.
