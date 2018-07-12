@@ -60,7 +60,7 @@ class UITestSampleUITests: XCTestCase {
     func testButtonIsOrange() {
         let app = XCUIApplication()
         let orangeButton = app.buttons["ViewController_orangeButton"]
-        XCTAssertEqual(orangeButton.label, "orange")
+        XCTAssertEqual(orangeButton.label, "Orange")
     }
     func testButtonIsYellow() {
         let app = XCUIApplication()
@@ -72,6 +72,7 @@ class UITestSampleUITests: XCTestCase {
         let app = XCUIApplication()
         let greenButton = app.buttons["ViewController_greenButton"]
         XCTAssertEqual(greenButton.label, "Green")
+    }
        
         func testBuutonIsBlue() {
             let app = XCUIApplication()
