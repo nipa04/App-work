@@ -9,6 +9,7 @@
 import XCTest
 
 class UITestSampleUITests: XCTestCase {
+   
         
     override func setUp() {
         super.setUp()
@@ -33,7 +34,7 @@ class UITestSampleUITests: XCTestCase {
         pinkButton.tap()
     }
     func testTapOrangeButton() {
-        let orangeButton = XCUIApplication().buttons["ViewController_ornageButton"]
+        let orangeButton = XCUIApplication().buttons["ViewController_orangeButton"]
         orangeButton.tap()
     }
     func testTapYellowButton() {
@@ -51,9 +52,32 @@ class UITestSampleUITests: XCTestCase {
         blueButton.tap()
     }
     func testButtonIsPink() {
-        XCTAssertTrue(viewController.buttonIsPink)
+        let app = XCUIApplication()
+        let pinkButton = app.buttons["ViewController_pinkButton"]
+        XCTAssertEqual(pinkButton.label, "Pink")
     }
     
+    func testButtonIsOrange() {
+        let app = XCUIApplication()
+        let orangeButton = app.buttons["ViewController_orangeButton"]
+        XCTAssertEqual(orangeButton.label, "orange")
+    }
+    func testButtonIsYellow() {
+        let app = XCUIApplication()
+        let yellowButton = app.buttons["ViewController_yellowButton"]
+        XCTAssertEqual(yellowButton.label, "Yellow")
+        
+    }
+    func testButtonIsGreen() {
+        let app = XCUIApplication()
+        let greenButton = app.buttons["ViewController_greenButton"]
+        XCTAssertEqual(greenButton.label, "Green")
+       
+        func testBuutonIsBlue() {
+            let app = XCUIApplication()
+            let blueBuuton = app.buttons["ViewController_blueButton"]
+            XCTAssertEqual(blueBuuton.label, "Blue")
+        }
     
     func testExample() {
         // Use recording to get started writing UI tests.

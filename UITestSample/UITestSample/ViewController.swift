@@ -24,9 +24,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.pinkButton.accessibilityIdentifier     = "ViewController_pinkButton";
-        self.orangeButton.accessibilityIdentifier   = "ViewController_ornageButton";
+        self.orangeButton.accessibilityIdentifier   = "ViewController_orangeButton";
         self.yellowButton.accessibilityIdentifier   = "ViewController_yellowButton";
-        self.greenButton.accessibilityIdentifier   = "ViewController_greenButton" ; self.blueButton.accessibilityIdentifier   = "ViewController_blueButton"
+        self.greenButton.accessibilityIdentifier   = "ViewController_greenButton" ;
+        self.blueButton.accessibilityIdentifier   = "ViewController_blueButton"
     }
 }
 

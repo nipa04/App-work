@@ -60,52 +60,58 @@
         <!--Color PickerVC-->
         <scene sceneID="IBF-gA-825">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SsS-Qx-eUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="v3o-KD-lAt" customClass="colorPickerVC" customModule="code_swag2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dwa-Wz-lZW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GlD-Hy-BtY">
-                                <rect key="frame" x="0.0" y="0.0" width="365" height="603"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hjy-52-vFP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEi-nH-oHK">
-                                        <rect key="frame" x="162.5" y="0.0" width="40" height="120.5"/>
-                                        <color key="backgroundColor" red="0.1176119968518704" green="1" blue="0.092431610309413936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="green"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8I-2p-S3i">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="120.5"/>
+                                        <color key="backgroundColor" red="0.28030752114859808" green="0.76050920050761417" blue="0.32959370431526819" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                        <state key="normal" title="Green">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
-                                            <action selector="colorButtonWasPressedWithSender:" destination="v3o-KD-lAt" eventType="touchUpInside" id="OIT-VV-FlG"/>
+                                            <action selector="colorButtonWasPressedWithSender:" destination="v3o-KD-lAt" eventType="touchUpInside" id="zcV-jf-wxm"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDF-4t-bvV">
-                                        <rect key="frame" x="161" y="120.5" width="43" height="120.5"/>
-                                        <color key="backgroundColor" red="1" green="0.94382729519660846" blue="0.17652219868166308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="yellow"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sB-P5-ZEd">
+                                        <rect key="frame" x="0.0" y="120.5" width="375" height="120.5"/>
+                                        <color key="backgroundColor" red="0.51142376669300948" green="0.81455966697479687" blue="0.91929727157360408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Blue">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
-                                            <action selector="colorButtonWasPressedWithSender:" destination="v3o-KD-lAt" eventType="touchUpInside" id="ml8-dR-96c"/>
+                                            <action selector="colorButtonWasPressedWithSender:" destination="v3o-KD-lAt" eventType="touchUpInside" id="HAo-ak-PCW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfs-ZF-8FZ">
-                                        <rect key="frame" x="167.5" y="241" width="30" height="121"/>
-                                        <color key="backgroundColor" red="1" green="0.24752184453380544" blue="0.19298624930020036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="red"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB4-Wd-RXm">
+                                        <rect key="frame" x="0.0" y="241" width="375" height="121"/>
+                                        <color key="backgroundColor" red="0.93157418691031668" green="1" blue="0.35150679346102287" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Yellow"/>
                                         <connections>
-                                            <action selector="colorButtonWasPressedWithSender:" destination="v3o-KD-lAt" eventType="touchUpInside" id="2El-pS-K6M"/>
+                                            <action selector="colorButtonWasPressedWithSender:" destination="v3o-KD-lAt" eventType="touchUpInside" id="q5h-AM-tX2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsz-UD-OCk">
-                                        <rect key="frame" x="167.5" y="362" width="30" height="120.5"/>
-                                        <color key="backgroundColor" red="0.24848708574760403" green="0.91499430010377836" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="blue"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7f-Pc-8cS">
+                                        <rect key="frame" x="0.0" y="362" width="375" height="120.5"/>
+                                        <color key="backgroundColor" red="1" green="0.21250583209748175" blue="0.1647894016749204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Red"/>
                                         <connections>
-                                            <action selector="colorButtonWasPressedWithSender:" destination="v3o-KD-lAt" eventType="touchUpInside" id="NvN-wH-K0R"/>
+                                            <action selector="colorButtonWasPressedWithSender:" destination="v3o-KD-lAt" eventType="touchUpInside" id="O5Z-Pp-wYL"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbq-NG-BgP">
-                                        <rect key="frame" x="160.5" y="482.5" width="44" height="120.5"/>
-                                        <color key="backgroundColor" red="0.36148766114498332" green="0.40382003911052744" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="purple"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGp-wR-C0E">
+                                        <rect key="frame" x="0.0" y="482.5" width="375" height="120.5"/>
+                                        <color key="backgroundColor" red="1" green="0.50348816165905952" blue="0.93639177884551661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Purple"/>
                                         <connections>
-                                            <action selector="colorButtonWasPressedWithSender:" destination="v3o-KD-lAt" eventType="touchUpInside" id="2xB-JF-q52"/>
+                                            <action selector="colorButtonWasPressedWithSender:" destination="v3o-KD-lAt" eventType="touchUpInside" id="KA2-g9-p7t"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -113,15 +119,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GlD-Hy-BtY" firstAttribute="top" secondItem="JjG-jN-387" secondAttribute="top" id="0oK-bK-scc"/>
-                            <constraint firstItem="GlD-Hy-BtY" firstAttribute="leading" secondItem="JjG-jN-387" secondAttribute="leading" id="9pS-f1-m1m"/>
-                            <constraint firstItem="JjG-jN-387" firstAttribute="trailing" secondItem="GlD-Hy-BtY" secondAttribute="trailing" constant="10" id="Ofe-ld-aXe"/>
-                            <constraint firstItem="JjG-jN-387" firstAttribute="bottom" secondItem="GlD-Hy-BtY" secondAttribute="bottom" id="PtN-cd-KMA"/>
+                            <constraint firstItem="JjG-jN-387" firstAttribute="bottom" secondItem="hjy-52-vFP" secondAttribute="bottom" id="FWN-UI-gPB"/>
+                            <constraint firstItem="hjy-52-vFP" firstAttribute="top" secondItem="JjG-jN-387" secondAttribute="top" id="G86-kq-N1a"/>
+                            <constraint firstItem="JjG-jN-387" firstAttribute="trailing" secondItem="hjy-52-vFP" secondAttribute="trailing" id="Wfg-Pl-et4"/>
+                            <constraint firstItem="hjy-52-vFP" firstAttribute="leading" secondItem="JjG-jN-387" secondAttribute="leading" id="beX-XE-mZE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JjG-jN-387"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SsS-Qx-eUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1221.5999999999999" y="116.49175412293854"/>
         </scene>
