@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  IntroToUnitTest
+//  New App
 //
-//  Created by iOS developer on 7/10/18.
+//  Created by iOS developer on 8/29/18.
 //  Copyright © 2018 iOS developer. All rights reserved.
 //
 
