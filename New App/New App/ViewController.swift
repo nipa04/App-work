@@ -12,15 +12,34 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var question: UITextField!
 
+    @IBOutlet weak var answerOne: UITextField!
     
-    @IBOutlet weak var submit: UIButton!
+    @IBOutlet weak var answerTwo: UITextField!
+    
+    @IBOutlet weak var answerThree: UITextField!
+    
+    @IBOutlet weak var answerFour: UITextField!
+    
+    
+    @IBAction func submit(_ sender: Any) {
+    
+    }
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.textFieldTapped(gestureRecognizer:)))
+        
+        view.addGestureRecognizer(tapGesture)
 
+        
+    }
+    
+    @objc func textFieldTapped(gestureRecognizer : UITapGestureRecognizer){
+        
+    }
    
 
 }

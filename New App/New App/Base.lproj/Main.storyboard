@@ -63,8 +63,11 @@
                                 <rect key="frame" x="118" y="406" width="179" height="44"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
                                 <state key="normal" title="SUBMIT">
-                                    <color key="titleColor" red="0.12593504952723156" green="0.40797122846206713" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q8j-Cx-BCN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.86425867329999995" green="0.94100967639999999" blue="0.89626256179999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -84,8 +87,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="answerFour" destination="lTa-h7-aCZ" id="cqd-N0-5Fr"/>
+                        <outlet property="answerOne" destination="oug-ue-cEn" id="OfZ-pC-Zh3"/>
+                        <outlet property="answerThree" destination="3cG-jx-tOF" id="bQU-bd-sfX"/>
+                        <outlet property="answerTwo" destination="jRS-AC-BRT" id="wMs-Th-Cxa"/>
                         <outlet property="question" destination="6C7-ST-9vZ" id="HNx-Zm-ptu"/>
-                        <outlet property="submit" destination="AzQ-yP-kwP" id="R4g-ny-Ypa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
