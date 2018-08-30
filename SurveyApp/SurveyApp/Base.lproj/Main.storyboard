@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wH0-E3-mZq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Survey-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SurveyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c7y-RD-Mei">
+                                <rect key="frame" x="0.0" y="50" width="375" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SurveyCell" rowHeight="212" id="Yc1-IA-Zs6" customClass="SurveyCell" customModule="SurveyApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="212"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yc1-IA-Zs6" id="vRs-SN-1Mv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="211.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xuy-gp-7G4">
+                                                    <rect key="frame" x="15" y="11" width="351" height="21"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pnt-nO-Fzz">
+                                                    <rect key="frame" x="73" y="47" width="250" height="21"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9VH-CC-6QP">
+                                                    <rect key="frame" x="73" y="106" width="250" height="22"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5m-te-51s">
+                                                    <rect key="frame" x="73" y="77" width="250" height="21"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OaJ-gY-cvI">
+                                                    <rect key="frame" x="73" y="142" width="250" height="21"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="9VH-CC-6QP" secondAttribute="trailing" constant="37" id="3wR-Cd-4tF"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="G5m-te-51s" secondAttribute="trailing" constant="37" id="864-tL-I7M"/>
+                                                <constraint firstItem="pnt-nO-Fzz" firstAttribute="leading" secondItem="vRs-SN-1Mv" secondAttribute="leadingMargin" constant="58" id="CXl-2S-KMI"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="pnt-nO-Fzz" secondAttribute="trailing" constant="37" id="CyT-tF-r1c"/>
+                                                <constraint firstItem="xuy-gp-7G4" firstAttribute="top" secondItem="vRs-SN-1Mv" secondAttribute="top" constant="11" id="Dl0-bX-gtd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="OaJ-gY-cvI" secondAttribute="trailing" constant="37" id="E0e-Uq-6ks"/>
+                                                <constraint firstItem="9VH-CC-6QP" firstAttribute="top" secondItem="G5m-te-51s" secondAttribute="bottom" constant="8" id="FTN-MW-nvC"/>
+                                                <constraint firstItem="pnt-nO-Fzz" firstAttribute="top" secondItem="xuy-gp-7G4" secondAttribute="bottom" constant="15" id="HCr-XX-4rM"/>
+                                                <constraint firstItem="OaJ-gY-cvI" firstAttribute="top" secondItem="9VH-CC-6QP" secondAttribute="bottom" constant="14" id="JTM-e8-76b"/>
+                                                <constraint firstItem="xuy-gp-7G4" firstAttribute="leading" secondItem="vRs-SN-1Mv" secondAttribute="leading" constant="15" id="RPX-KA-rCc"/>
+                                                <constraint firstItem="OaJ-gY-cvI" firstAttribute="top" secondItem="9VH-CC-6QP" secondAttribute="bottom" constant="14" id="UjY-Cf-BNS"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="OaJ-gY-cvI" secondAttribute="bottom" constant="38" id="d4L-A9-Ui0"/>
+                                                <constraint firstItem="OaJ-gY-cvI" firstAttribute="leading" secondItem="vRs-SN-1Mv" secondAttribute="leadingMargin" constant="58" id="db1-ah-Wxa"/>
+                                                <constraint firstItem="9VH-CC-6QP" firstAttribute="top" secondItem="G5m-te-51s" secondAttribute="bottom" constant="8" id="ePd-hR-kU1"/>
+                                                <constraint firstItem="G5m-te-51s" firstAttribute="top" secondItem="pnt-nO-Fzz" secondAttribute="bottom" constant="9" id="j2V-nf-2in"/>
+                                                <constraint firstItem="9VH-CC-6QP" firstAttribute="leading" secondItem="vRs-SN-1Mv" secondAttribute="leadingMargin" constant="58" id="khS-Ng-Z8f"/>
+                                                <constraint firstItem="G5m-te-51s" firstAttribute="leading" secondItem="vRs-SN-1Mv" secondAttribute="leadingMargin" constant="58" id="q7Y-0C-Lb0"/>
+                                                <constraint firstAttribute="trailing" secondItem="xuy-gp-7G4" secondAttribute="trailing" constant="9" id="rvG-vz-Gts"/>
+                                                <constraint firstItem="9VH-CC-6QP" firstAttribute="top" secondItem="G5m-te-51s" secondAttribute="bottom" constant="8" id="xBr-yz-iPT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="answerFourTextField" destination="OaJ-gY-cvI" id="wot-I8-4rS"/>
+                                            <outlet property="answerOneTextField" destination="pnt-nO-Fzz" id="Nsf-eM-gBP"/>
+                                            <outlet property="answerThreeTextField" destination="9VH-CC-6QP" id="1DD-xe-55I"/>
+                                            <outlet property="answerTwoTextField" destination="G5m-te-51s" id="HT4-ss-G2F"/>
+                                            <outlet property="questionTextField" destination="xuy-gp-7G4" id="VuA-R3-VXr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Survey Question List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCu-S6-vh9">
+                                <rect key="frame" x="16" y="10" width="228" height="32"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c7y-RD-Mei" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0sZ-XK-s7d"/>
+                            <constraint firstItem="c7y-RD-Mei" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Are-Kn-Fiw"/>
+                            <constraint firstItem="dCu-S6-vh9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JWP-LF-2Xj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dCu-S6-vh9" secondAttribute="trailing" constant="131" id="Wkt-xl-IxA"/>
+                            <constraint firstItem="dCu-S6-vh9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="nBb-Fb-HhX"/>
+                            <constraint firstItem="c7y-RD-Mei" firstAttribute="top" secondItem="dCu-S6-vh9" secondAttribute="bottom" constant="8" id="qj3-f6-Ko4"/>
+                            <constraint firstItem="c7y-RD-Mei" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="uKm-UD-waa"/>
+                            <constraint firstItem="c7y-RD-Mei" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="y5C-Rq-CSF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Survey" id="lF9-oc-7al"/>
+                    <connections>
+                        <outlet property="surveyTable" destination="c7y-RD-Mei" id="LIz-9I-1vr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oc2-Be-zvv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wH0-E3-mZq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="0nd-A3-aux">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="i4t-4Z-pIG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTS-BI-Qtz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423" y="117"/>
+        </scene>
+    </scenes>
+</document>

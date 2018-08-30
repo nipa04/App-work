@@ -16,10 +16,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Survey-->
+        <!--New App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="New_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="New App" customClass="ViewController" customModule="New_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,8 +90,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="jpA-NM-O6X"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="XhE-HV-2TX"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="RDo-MC-C6L"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VcW-h2-CkA"/>
                                 </connections>
                             </tableView>
                         </subviews>
