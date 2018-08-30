@@ -24,6 +24,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Survey Question List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCu-S6-vh9">
+                                <rect key="frame" x="16" y="10" width="228" height="32"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c7y-RD-Mei">
                                 <rect key="frame" x="0.0" y="50" width="375" height="553"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,7 +42,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xuy-gp-7G4">
-                                                    <rect key="frame" x="15" y="11" width="351" height="21"/>
+                                                    <rect key="frame" x="42" y="11" width="301" height="21"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -69,6 +75,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="9VH-CC-6QP" secondAttribute="trailing" constant="37" id="3wR-Cd-4tF"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="G5m-te-51s" secondAttribute="trailing" constant="37" id="864-tL-I7M"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="xuy-gp-7G4" secondAttribute="trailing" constant="17" id="Aj7-if-pOS"/>
                                                 <constraint firstItem="pnt-nO-Fzz" firstAttribute="leading" secondItem="vRs-SN-1Mv" secondAttribute="leadingMargin" constant="58" id="CXl-2S-KMI"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="pnt-nO-Fzz" secondAttribute="trailing" constant="37" id="CyT-tF-r1c"/>
                                                 <constraint firstItem="xuy-gp-7G4" firstAttribute="top" secondItem="vRs-SN-1Mv" secondAttribute="top" constant="11" id="Dl0-bX-gtd"/>
@@ -76,7 +83,7 @@
                                                 <constraint firstItem="9VH-CC-6QP" firstAttribute="top" secondItem="G5m-te-51s" secondAttribute="bottom" constant="8" id="FTN-MW-nvC"/>
                                                 <constraint firstItem="pnt-nO-Fzz" firstAttribute="top" secondItem="xuy-gp-7G4" secondAttribute="bottom" constant="15" id="HCr-XX-4rM"/>
                                                 <constraint firstItem="OaJ-gY-cvI" firstAttribute="top" secondItem="9VH-CC-6QP" secondAttribute="bottom" constant="14" id="JTM-e8-76b"/>
-                                                <constraint firstItem="xuy-gp-7G4" firstAttribute="leading" secondItem="vRs-SN-1Mv" secondAttribute="leading" constant="15" id="RPX-KA-rCc"/>
+                                                <constraint firstItem="xuy-gp-7G4" firstAttribute="leading" secondItem="vRs-SN-1Mv" secondAttribute="leadingMargin" constant="27" id="PcE-Ne-aAX"/>
                                                 <constraint firstItem="OaJ-gY-cvI" firstAttribute="top" secondItem="9VH-CC-6QP" secondAttribute="bottom" constant="14" id="UjY-Cf-BNS"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="OaJ-gY-cvI" secondAttribute="bottom" constant="38" id="d4L-A9-Ui0"/>
                                                 <constraint firstItem="OaJ-gY-cvI" firstAttribute="leading" secondItem="vRs-SN-1Mv" secondAttribute="leadingMargin" constant="58" id="db1-ah-Wxa"/>
@@ -84,7 +91,6 @@
                                                 <constraint firstItem="G5m-te-51s" firstAttribute="top" secondItem="pnt-nO-Fzz" secondAttribute="bottom" constant="9" id="j2V-nf-2in"/>
                                                 <constraint firstItem="9VH-CC-6QP" firstAttribute="leading" secondItem="vRs-SN-1Mv" secondAttribute="leadingMargin" constant="58" id="khS-Ng-Z8f"/>
                                                 <constraint firstItem="G5m-te-51s" firstAttribute="leading" secondItem="vRs-SN-1Mv" secondAttribute="leadingMargin" constant="58" id="q7Y-0C-Lb0"/>
-                                                <constraint firstAttribute="trailing" secondItem="xuy-gp-7G4" secondAttribute="trailing" constant="9" id="rvG-vz-Gts"/>
                                                 <constraint firstItem="9VH-CC-6QP" firstAttribute="top" secondItem="G5m-te-51s" secondAttribute="bottom" constant="8" id="xBr-yz-iPT"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -98,12 +104,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Survey Question List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCu-S6-vh9">
-                                <rect key="frame" x="16" y="10" width="228" height="32"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -121,11 +121,27 @@
                     <navigationItem key="navigationItem" title="Survey" id="lF9-oc-7al"/>
                     <connections>
                         <outlet property="surveyTable" destination="c7y-RD-Mei" id="LIz-9I-1vr"/>
+                        <segue destination="y4A-Zo-Enp" kind="show" id="rJO-k1-mBK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="456.80000000000001" y="117.39130434782609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LfR-H0-qjG">
+            <objects>
+                <viewController id="y4A-Zo-Enp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IAy-OM-7lz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="HZp-8f-P6y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32b-4B-O2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oc2-Be-zvv">
