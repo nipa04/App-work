@@ -16,17 +16,13 @@ class SurveyCell: UITableViewCell {
     @IBOutlet weak var answerThreeTextField : UITextField!
     @IBOutlet weak var answerFourTextField : UITextField!
     
-    
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func updateViews(survey : Survey){
+        questionTextField.text =  survey.question
+        answerOneTextField.text = survey.answerOne
+        answerTwoTextField.text = survey.answerTwo
+        answerThreeTextField.text = survey.answerThree
+        answerFourTextField.text = survey.answerfour
+        
     }
 
 }
