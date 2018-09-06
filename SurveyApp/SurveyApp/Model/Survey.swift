@@ -11,17 +11,17 @@ import Foundation
 struct Survey {
     
     private (set)public var question : String
-    private (set) public var answerOne : String
-    private (set) public var answerTwo : String
-    private (set)public var answerThree: String
-    private (set)public var answerfour: String
+    private (set) public var labelOne : String
+    private (set) public var labelTwo : String
+    private (set)public var labelThree: String
+    private (set)public var labelFour: String
    
-    init (question:String,answerOne: String ,answerTwo : String, answerThree: String, answerFour:String ) {
+    init (question:String,labelOne: String ,labelTwo : String, labelThree: String, labelFour:String ) {
         self.question = question
-        self.answerOne = answerOne
-        self.answerTwo = answerTwo
-        self.answerThree = answerThree
-        self.answerfour = answerFour
+        self.labelOne = labelOne
+        self.labelTwo = labelTwo
+        self.labelThree = labelThree
+        self.labelFour = labelFour
      
     }
 }

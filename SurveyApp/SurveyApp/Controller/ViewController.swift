@@ -19,7 +19,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         surveyTable.delegate = self
        
     }
-    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return DataService.instance.getSurveys().capacity
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataService.instance.getSurveys().count
     }

@@ -11,18 +11,24 @@ import UIKit
 class SurveyCell: UITableViewCell {
     
     @IBOutlet weak var questionTextField : UITextField!
-    @IBOutlet weak var answerOneTextField : UITextField!
-    @IBOutlet weak var answerTwoTextField : UITextField!
-    @IBOutlet weak var answerThreeTextField : UITextField!
-    @IBOutlet weak var answerFourTextField : UITextField!
     
-    func updateViews(survey : Survey){
-        questionTextField.text =  survey.question
-        answerOneTextField.text = survey.answerOne
-        answerTwoTextField.text = survey.answerTwo
-        answerThreeTextField.text = survey.answerThree
-        answerFourTextField.text = survey.answerfour
+    @IBOutlet weak var labelOne: UILabel!
+    
+    @IBOutlet weak var labelTwo: UILabel!
+    
+    @IBOutlet weak var labelThree: UILabel!
+    
+    @IBOutlet weak var labelFour: UILabel!
+    
+    
+    func updateViews(survey : Survey) {
         
+        questionTextField.text =  survey.question
+        labelOne.text = survey.labelOne
+        labelTwo.text = survey.labelTwo
+        labelThree.text = survey.labelThree
+        labelFour.text = survey.labelFour
+
     }
 
 }

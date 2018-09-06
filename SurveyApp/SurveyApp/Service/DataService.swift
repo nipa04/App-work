@@ -14,13 +14,15 @@ class DataService {
     
     private let surveys = [
         
-        Survey(question : "What is your favorite Breakfast?",answerOne : "Eggs", answerTwo : "Toast",answerThree : "Muffin", answerFour: "CornFlakes"),
-        Survey(question : "What is your favorite Flower?",answerOne : "Rose", answerTwo : "Tulip",answerThree : "Lily", answerFour: "Orchid"),
-        Survey(question : "What is your favorite Drinks?",answerOne : "Lamonade", answerTwo : "Cola",answerThree : "Orange Juice", answerFour: "Coktails"),
-        Survey(question : "What is your favorite TVShow?",answerOne : "X-files", answerTwo : "Breaking Bad",answerThree : "Better Call Saul", answerFour: "Friends"),
-        Survey(question : "What is your favorite Vacation place?",answerOne : "Hawaii", answerTwo : "Carribeans",answerThree : "Las Vegas", answerFour: "Europe"),
-        Survey(question : "What is your favorite Color?",answerOne : "White", answerTwo : "Red",answerThree : "Blue", answerFour: "Green")
+        Survey(question : "What is your favorite Breakfast?",labelOne : "Eggs", labelTwo : "Toast",labelThree : "Muffin", labelFour: "CornFlakes"),
+        Survey(question : "What is your favorite Flower?",labelOne : "Rose", labelTwo : "Tulip",labelThree : "Lily", labelFour: "Orchid"),
+        Survey(question : "What is your favorite Drinks?",labelOne : "Lamonade", labelTwo : "Cola",labelThree : "Orange Juice", labelFour: "Coktails"),
+        Survey(question : "What is your favorite TVShow?",labelOne : "X-files", labelTwo : "Breaking Bad",labelThree : "Better Call Saul", labelFour: "Friends"),
+        Survey(question : "What is your favorite Vacation place?",labelOne : "Hawaii", labelTwo : "Carribeans",labelThree : "Las Vegas", labelFour: "Europe"),
+        Survey(question : "What is your favorite Color?",labelOne : "White", labelTwo : "Red",labelThree : "Blue", labelFour: "Green")
+    
     ]
+    
     
     func getSurveys() -> [Survey] {
         return surveys
