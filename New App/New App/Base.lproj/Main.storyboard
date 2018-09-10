@@ -6,15 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Avenir.ttc">
-            <string>Avenir-Book</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--New App-->
         <scene sceneID="tne-QT-ifu">
@@ -28,65 +22,13 @@
                                 <rect key="frame" x="0.0" y="85" width="414" height="651"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SurveyCell" rowHeight="246" id="lnn-qB-r1g" customClass="SurveyCell" customModule="New_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="246"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SurveyCell" rowHeight="147" id="lnn-qB-r1g" customClass="SurveyCell" customModule="New_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="147"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lnn-qB-r1g" id="0TP-x2-cvq">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="245.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="146.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="What is your favorite breakfast?" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q7W-T4-RNh">
-                                                    <rect key="frame" x="15" y="18" width="384" height="35"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lk3-Qc-wko">
-                                                    <rect key="frame" x="151" y="61" width="81" height="170"/>
-                                                    <subviews>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Egg" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hNc-Tx-s8k">
-                                                            <rect key="frame" x="0.0" y="0.0" width="81" height="35"/>
-                                                            <nil key="textColor"/>
-                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
-                                                            <textInputTraits key="textInputTraits"/>
-                                                        </textField>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Toast" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sX3-TH-tT2">
-                                                            <rect key="frame" x="0.0" y="45" width="81" height="35"/>
-                                                            <nil key="textColor"/>
-                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
-                                                            <textInputTraits key="textInputTraits"/>
-                                                        </textField>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Muffin" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Yb-nt-eFG">
-                                                            <rect key="frame" x="0.0" y="90" width="81" height="35"/>
-                                                            <nil key="textColor"/>
-                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
-                                                            <textInputTraits key="textInputTraits"/>
-                                                        </textField>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Banana" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N1U-ZJ-9VE">
-                                                            <rect key="frame" x="0.0" y="135" width="81" height="35"/>
-                                                            <nil key="textColor"/>
-                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
-                                                            <textInputTraits key="textInputTraits"/>
-                                                        </textField>
-                                                    </subviews>
-                                                </stackView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Lk3-Qc-wko" firstAttribute="leading" secondItem="0TP-x2-cvq" secondAttribute="leadingMargin" constant="136" id="Kkm-Ux-T6f"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Lk3-Qc-wko" secondAttribute="trailing" constant="167" id="RlX-gm-bGr"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Lk3-Qc-wko" secondAttribute="bottom" constant="4" id="c4f-tZ-Y4L"/>
-                                                <constraint firstItem="q7W-T4-RNh" firstAttribute="leading" secondItem="0TP-x2-cvq" secondAttribute="leadingMargin" id="cJq-uf-OfR"/>
-                                                <constraint firstItem="Lk3-Qc-wko" firstAttribute="top" secondItem="q7W-T4-RNh" secondAttribute="bottom" constant="8" id="edt-J0-G3u"/>
-                                                <constraint firstItem="q7W-T4-RNh" firstAttribute="trailing" secondItem="0TP-x2-cvq" secondAttribute="trailingMargin" id="wfh-6R-3iD"/>
-                                            </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="answerFourTextField" destination="N1U-ZJ-9VE" id="xUv-No-cNu"/>
-                                            <outlet property="answerOneTextField" destination="hNc-Tx-s8k" id="znh-vn-h7G"/>
-                                            <outlet property="answerThreeTextField" destination="2Yb-nt-eFG" id="TnC-2x-LLq"/>
-                                            <outlet property="answerTwoTextField" destination="sX3-TH-tT2" id="CMd-Uc-BvX"/>
-                                            <outlet property="questionTextField" destination="q7W-T4-RNh" id="veZ-s1-AJE"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

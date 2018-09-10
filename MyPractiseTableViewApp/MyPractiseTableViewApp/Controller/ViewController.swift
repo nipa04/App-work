@@ -8,48 +8,68 @@
 
 import UIKit
 
+/*
+ {
+    question            -> String
+    answers             -> [String]
+        {
+            - Op1
+            - Op2
+            - Op3
+            - Op4
+        }
+    correctIndex        -> Int
+ }
+ */
+
+struct SurveySectionModel {
+    let question: String
+    let answers: [String]
+    let correctIndex: Int
+}
+
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var myTable : UITableView!
     
-    let sections = ["Foods", "Vegetables" , "Meat", "Dessert"]
-    let s1Data = ["Egg","bread", "banana"]
-    let s2Data = ["milk", "mango", "beef"]
-    let s3Data = ["tomato", "broccoli" , "onion"]
-    let s4data = ["grapes", "avocado"]
+    let dataSource: [SurveySectionModel] = [SurveySectionModel(question: "Question1",
+                                                               answers: ["a", "b", "c", "d"],
+                                                               correctIndex: 0),
+                                            SurveySectionModel(question: "Question2",
+                                                               answers: ["a", "b", "c", "d"],
+                                                               correctIndex: 1),
+                                            SurveySectionModel(question: "Question3",
+                                                               answers: ["a", "b", "c", "d"],
+                                                               correctIndex: 3),
+                                            SurveySectionModel(question: "Question4",
+                                                               answers: ["a", "b", "c", "d"],
+                                                               correctIndex: 2)]
     
-    var sectionData : [Int : [String]] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         myTable.dataSource = self
         myTable.delegate = self
-        
-        sectionData = [0: s1Data, 1: s2Data , 2:s3Data, 3: s4data]
-        
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sections.count
+        return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sections[section]
+        let sectionData = dataSource[section]
+        return sectionData.question
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (sectionData[section]?.count)!
+        let sectionData = dataSource[section]
+        return sectionData.answers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myTableView" )
-        cell?.textLabel?.text = sectionData[indexPath.section]?[indexPath.row]
+        let sectionData = dataSource[indexPath.section]
+        cell?.textLabel?.text = sectionData.answers[indexPath.row]
         return cell!
-        
-        
     }
-    
-    
-
-
 }
 

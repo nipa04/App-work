@@ -4,7 +4,6 @@
 //
 //  Created by iOS developer on 8/30/18.
 //  Copyright © 2018 iOS developer. All rights reserved.
-//
 
 import Foundation
 
@@ -12,22 +11,19 @@ class DataService {
     
     static let instance = DataService()
     
-    private let surveys = [
+    private let dataSource: [SurveySectionModel] = [
         
-        Survey(question : "What is your favorite Breakfast?",labelOne : "Eggs", labelTwo : "Toast",labelThree : "Muffin", labelFour: "CornFlakes"),
-        Survey(question : "What is your favorite Flower?",labelOne : "Rose", labelTwo : "Tulip",labelThree : "Lily", labelFour: "Orchid"),
-        Survey(question : "What is your favorite Drinks?",labelOne : "Lamonade", labelTwo : "Cola",labelThree : "Orange Juice", labelFour: "Coktails"),
-        Survey(question : "What is your favorite TVShow?",labelOne : "X-files", labelTwo : "Breaking Bad",labelThree : "Better Call Saul", labelFour: "Friends"),
-        Survey(question : "What is your favorite Vacation place?",labelOne : "Hawaii", labelTwo : "Carribeans",labelThree : "Las Vegas", labelFour: "Europe"),
-        Survey(question : "What is your favorite Color?",labelOne : "White", labelTwo : "Red",labelThree : "Blue", labelFour: "Green")
-    
+ SurveySectionModel(question : "What is your fav breakfast?", answers : ["egg", "bread", "muffin","bagel"], correctIndex : 1 ),
+ SurveySectionModel(question : "What is your fav game?", answers : ["hockey", "golf", "football","tennis"], correctIndex : 2),
+ SurveySectionModel(question : "What is your fav color?", answers : ["orange", "red", "blue","pink"], correctIndex : 0),
+ SurveySectionModel(question : "What is your fav flower?", answers : ["orchid", "rose", "lily","lotus"], correctIndex : 3 ),
+ 
     ]
     
-    
-    func getSurveys() -> [Survey] {
-        return surveys
+
+    func getSurveys() -> [SurveySectionModel] {
+        return dataSource
     }
-    
-    
 }
+
 

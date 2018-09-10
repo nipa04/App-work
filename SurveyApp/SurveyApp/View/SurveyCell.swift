@@ -8,26 +8,19 @@
 
 import UIKit
 
+
 class SurveyCell: UITableViewCell {
     
-    @IBOutlet weak var questionTextField : UITextField!
+    var question : String = ""
+    var answers: [String] = []
+    var correctIndex: Int = 0
     
-    @IBOutlet weak var labelOne: UILabel!
+    @IBOutlet weak var surveyQuestionList : UILabel!
     
-    @IBOutlet weak var labelTwo: UILabel!
-    
-    @IBOutlet weak var labelThree: UILabel!
-    
-    @IBOutlet weak var labelFour: UILabel!
-    
-    
-    func updateViews(survey : Survey) {
-        
-        questionTextField.text =  survey.question
-        labelOne.text = survey.labelOne
-        labelTwo.text = survey.labelTwo
-        labelThree.text = survey.labelThree
-        labelFour.text = survey.labelFour
+    func updateViews(survey : SurveySectionModel) {
+        question = survey.question
+        answers = survey.answers
+        correctIndex = survey.correctIndex
 
     }
 
