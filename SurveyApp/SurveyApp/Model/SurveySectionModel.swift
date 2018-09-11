@@ -9,12 +9,14 @@
 import Foundation
 
 struct SurveySectionModel {
-    
     let question: String
     let answers: [String]
     let correctIndex: Int
-    
 }
 
+//struct Answer {
+//    let answer: String
+//    let correctAns: Bool
+//}
 
 

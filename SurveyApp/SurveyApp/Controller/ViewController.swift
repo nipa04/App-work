@@ -29,11 +29,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
-        view.backgroundColor = UIColor.cyan
+        view.backgroundColor = UIColor.green
     
         let label = UILabel()
         label.text = DataService.instance.getSurveys()[section].question
-        label.frame = CGRect (x: 30, y: 5, width: 300, height: 35)
+        label.frame = CGRect (x: 20, y: 5, width: 400, height: 35)
         view.addSubview(label)
         return view
         
@@ -52,15 +52,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let cell = tableView.dequeueReusableCell(withIdentifier: "SurveyCell") as? SurveyCell {
             let surveySectionModel = DataService.instance.getSurveys()[indexPath.section]
             cell.textLabel?.text = surveySectionModel.answers[indexPath.row]
-           // cell.updateViews(survey: surveySectionModel)
+//            cell.updateViews(survey: surveySectionModel)
             return cell
         }
             else {
                 return SurveyCell()
             
         }
-    
     }
-
+//    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        if let cell = tableView.dequeueReusableCell(withIdentifier: "SurveyCell") as? SurveyCell {
+//            let surveySectionModel = DataService.instance.getSurveys()[indexPath.section]
+//            cell.textLabel?.text = surveySectionModel.answers[indexPath.row]
+//            cell.isSelected = true
+//           
+//    }
+//
+//}
 }
-

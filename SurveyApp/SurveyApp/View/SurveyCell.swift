@@ -10,18 +10,5 @@ import UIKit
 
 
 class SurveyCell: UITableViewCell {
-    
-    var question : String = ""
-    var answers: [String] = []
-    var correctIndex: Int = 0
-    
-    @IBOutlet weak var surveyQuestionList : UILabel!
-    
-    func updateViews(survey : SurveySectionModel) {
-        question = survey.question
-        answers = survey.answers
-        correctIndex = survey.correctIndex
-
-    }
-
+  
 }
