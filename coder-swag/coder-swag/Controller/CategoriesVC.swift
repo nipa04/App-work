@@ -23,7 +23,7 @@ class CategoriesVC: UIViewController , UITableViewDataSource, UITableViewDelegat
         return 200
     }
     
-    // MARK:
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return DataService.instance.getCategories().count
     }
